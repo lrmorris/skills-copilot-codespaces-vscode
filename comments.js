@@ -4,6 +4,8 @@ const app = express();
 //create a port
 const port = process.env.PORT || 3000;
 //create a json object
+app.use(express.json());
+//create an array of objects
 const comments = [
     { username: 'Tammy', comment: 'lololol' },
     { username: 'FishBoi', comment: 'Nice one' },
